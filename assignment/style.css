@@ -1,11 +1,102 @@
 /* Give your page a fun background color */
+body {
+  background-color: #e1edfa;
+  padding: 0;
+  margin: 0;
+}
 
 /* Make the header and footer a different color from the background */
+header {
+  font-family: 'Abril Fatface', cursive;
+  background-color: #e60b0b;
+  color: white;
+  font-size: 3.8vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-/* Align the h1 containing your name in the center of the header*/
+h1 {
+  text-align: center;
+  margin: auto;
+  padding: 0;
+}
 
-/* Make your p tag a different color and italic */
+#photo-box{
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
 
 /* Put a border around your image */
+.image {
+    height: 350px;
+    width: 350px;
+    border: 1px black solid;
+    transition: .3s;
+}
+
+#tower:hover{
+  box-shadow: -8px 8px 12px slategrey;
+}
+
+#rock:hover{
+  box-shadow: 0px 8px 12px slategrey;
+}
+
+#boat:hover{
+  box-shadow: 8px 8px 12px slategrey;
+}
 
 /* Change the font-family of your list */
+ul {
+  list-style-type: none;
+  font-family: 'Staatliches', cursive;
+  font-size: 3.4vw;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  color: #e60b0b;
+}
+
+/* Make your p tag a different color and italic */
+p {
+  font-style: italic;
+  color: white;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.9vw;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+/* Make the header and footer a different color from the background */
+footer {
+  background-color: #e60b0b;
+}
+
+@media (max-width: 1100px) {
+  .image {
+      height: 250px;
+      width: 250px;
+      border: 1px black solid;
+      transition: .3s;
+  }
+}
+
+@media (max-width: 800px){
+  .image {
+      height: 150px;
+      width: 150px;
+      border: 1px black solid;
+      transition: .3s;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+      height: 100px;
+      width: 100px;
+      border: 1px black solid;
+      transition: .3s;
+  }
+}
